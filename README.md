@@ -37,3 +37,14 @@ To run correctly, the script requires the following tools installed on your Linu
    ```bash
    git clone [https://github.com/marcopcabrera/hifi-dvd-pro.git](https://github.com/marcopcabrera/hifi-dvd-pro.git)
    cd hifi-dvd-pro
+
+## 📂 Folder Requirements
+
+Before running the script, make sure your album directory contains:
+* Your audio files (`.flac`, `.wav`, `.mp3`, etc.).
+* A cover image named **`cover`** (e.g., `cover.jpg` or `cover.png`).
+
+Example of a valid album folder:
+├── 01-track.flac
+├── 02-track.flac
+└── cover.jpg
