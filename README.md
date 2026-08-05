@@ -1,4 +1,4 @@
-# 💿 HiFi DVD Pro
+# 💿 HiFi DVD Pro (v1.0.1)
 
 **HiFi DVD Pro** is an interactive Bash script designed for creating and authoring professional **Hi-Fi Audio DVDs** (`VIDEO_TS` folders and/or `.iso` disc images) from lossless (**FLAC**, **WAV**) or compressed (**MP3**, **OGG**, **M4A**, **AAC**) audio files, incorporating album artwork as a static background during playback.
 
