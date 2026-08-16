@@ -5,7 +5,7 @@ Summary:        Interactive Bash script designed for creating and authoring prof
 
 License:        GPL-3.0-or-later
 URL:            https://github.com/marcopcabrera/hifi-dvd-pro
-Source0:        %{url}/archive/refs/tags/v%{version}.tar.gz
+Source0:        %{url}/archive/refs/tags/v%{version}.tar.gz#/%{name}-%{version}.tar.gz
 
 BuildArch:      noarch
 
@@ -25,7 +25,7 @@ lossless (FLAC, WAV) or compressed (MP3, OGG, M4A, AAC) audio files,
 incorporating album artwork as a static background during playback.
 
 %prep
-%autosetup -n %{name}-%{version}
+%autosetup
 
 %build
 
@@ -39,7 +39,8 @@ install -p -m 0755 hifi-dvd-pro.sh %{buildroot}%{_bindir}/%{name}
 %{_bindir}/%{name}
 
 %changelog
-* Sun Aug 16 2026 Marco P. Cabrera <graphinux@gmail.com> - 1.0.0-1
-- First packaged version for Fedora.
 * Sun Aug 16 2026 Marco P. Cabrera <graphinux@gmail.com> - 1.0.1-1
 - Release 1.0.1 with license file included in tarball.
+
+* Sun Aug 16 2026 Marco P. Cabrera <graphinux@gmail.com> - 1.0.0-1
+- First packaged version for Fedora.
