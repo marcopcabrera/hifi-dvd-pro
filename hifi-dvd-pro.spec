@@ -41,3 +41,5 @@ install -p -m 0755 hifi-dvd-pro.sh %{buildroot}%{_bindir}/%{name}
 %changelog
 * Sun Aug 16 2026 Marco P. Cabrera <graphinux@gmail.com> - 1.0.0-1
 - First packaged version for Fedora.
+* Sun Aug 16 2026 Marco P. Cabrera <graphinux@gmail.com> - 1.0.1-1
+- Release 1.0.1 with license file included in tarball.
