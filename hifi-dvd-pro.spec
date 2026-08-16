@@ -28,12 +28,10 @@ incorporating album artwork as a static background during playback.
 %autosetup -n %{name}-%{version}
 
 %build
-# Paquete de solo scripts, no requiere compilación.
 
 %install
 mkdir -p %{buildroot}%{_bindir}
-# NOTA: Si tu archivo fuente en GitHub se llama 'hifi-dvd-pro.sh', cámbialo aquí a 'hifi-dvd-pro.sh'
-install -p -m 0755 hifi-dvd-pro %{buildroot}%{_bindir}/%{name}
+install -p -m 0755 hifi-dvd-pro.sh %{buildroot}%{_bindir}/%{name}
 
 %files
 %license LICENSE
