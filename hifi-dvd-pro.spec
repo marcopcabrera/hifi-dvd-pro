@@ -1,5 +1,5 @@
 Name:           hifi-dvd-pro
-Version:        1.0.0
+Version:        1.0.1
 Release:        1%{?dist}
 Summary:        Interactive Bash script designed for creating and authoring professional Hi-Fi Audio DVDs
 
