@@ -1,0 +1,46 @@
+Name:           hifi-dvd-pro
+Version:        1.0.1
+Release:        1%{?dist}
+Summary:        Authoring tool for professional Hi-Fi audio DVDs
+
+License:        GPL-3.0-or-later
+URL:            https://github.com/marcopcabrera/hifi-dvd-pro
+Source0:        %{url}/archive/refs/tags/v%{version}.tar.gz#/%{name}-%{version}.tar.gz
+
+BuildArch:      noarch
+
+Requires:       bash
+Requires:       /usr/bin/ffmpeg
+Requires:       dvdauthor
+Requires:       genisoimage
+Requires:       ncurses
+Requires:       coreutils
+Requires:       procps-ng
+Recommends:     libnotify
+
+%description
+HiFi DVD Pro is an interactive Bash script designed for creating and authoring
+professional Hi-Fi Audio DVDs (VIDEO_TS folders and/or .ISO disc images) from
+lossless (FLAC, WAV) or compressed (MP3, OGG, M4A, AAC) audio files,
+incorporating album artwork as a static background during playback.
+
+%prep
+%autosetup
+
+%build
+
+%install
+mkdir -p %{buildroot}%{_bindir}
+install -p -m 0755 hifi-dvd-pro.sh %{buildroot}%{_bindir}/%{name}
+
+%files
+%license LICENSE
+%doc README.md
+%{_bindir}/%{name}
+
+%changelog
+* Sun Aug 16 2026 Marco P. Cabrera <311743825+marcopcabrera@users.noreply.github.com> - 1.0.1-1
+- Release 1.0.1 with license file included in tarball.
+
+* Sun Aug 16 2026 Marco P. Cabrera <311743825+marcopcabrera@users.noreply.github.com> - 1.0.0-1
+- First packaged version for Fedora.
